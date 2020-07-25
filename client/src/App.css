@@ -1,28 +1,570 @@
-.App {
-  text-align: center;
+* {
+  /* text-align: center; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#salespop_content img{
+  width: 100rem;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.scheduleACallContainer{
+  padding: 8%;
+  /* background-color: rgba(172, 51, 51, 0.87); */
+  height: 100%;
+  width: 90%;
+}
+
+#body_sales{
+  overflow-x: hidden;
+}
+
+.step_process img{
+  width: 3rem;
+  height: 8rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .step_process img{
+    width: 3rem;
+    height: 4rem;
+  }
+}
+
+#vid-background{
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    z-index:-1;
+}
+
+@media screen and (max-width: 1200px) {
+  .step_process img{
+    width: 50%;
+    height: 100%;
+  }
+}
+
+#header1{
+  font-size: 350%;
+  color: #0c0044;
+}
+#header2{
+  font-size: 200%;
+  color: #0c0044;
+}
+#header3{
+  font-size: 150%;
+  color: #0c0044;
+}
+
+@media screen and (max-width: 1200px) {
+  #header1{
+    font-size: 300%;
+  }
+  #header2{
+    font-size:150%;
+  }
+  #header3{
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header1{
+    font-size: 200%;
+  }
+  #header2{
+    font-size: 100%;
+  }
+  #header3{
+    font-size: 80%;
+  }
+}
+
+
+
+#schedule_date{
+  
+  margin-top: 12rem;
+  margin-right: 0.5rem;
+  position:absolute;
+  top:0;
+  right:0;
+  background-color: #0c0044;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 1rem;
+  width: 12rem;
+  padding: 15px;
+}
+
+#schedule_date_text::placeholder {
   color: white;
 }
-
-.App-title {
-  font-size: 1.5em;
+#schedule_date_email::placeholder {
+  color: white;
+}
+#schedule_date_text{
+  
+  margin-top: 4rem;
+  margin-right: 0.5rem;
+  position:absolute;
+  top:0;
+  right:0;
+  background-color: #0c0044;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 1rem;
+  width: 12rem;
+  padding: 15px;
+  font-size: medium;
+}
+#schedule_date_text:hover{
+  background-color: white;
+  color: #0c0044;
 }
 
-.App-intro {
+#schedule_date_email{
+  
+  margin-top: 8rem;
+  margin-right: 0.5rem;
+  position:absolute;
+  top:0;
+  right:0;
+  background-color: #0c0044;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 1rem;
+  width: 12rem;
+  padding: 15px;
+  font-size: medium;
+}
+#schedule_date_email:hover{
+  background-color: white;
+  color: #0c0044;
+}
+
+#schedule_date_date{
+  
+  margin-top: 16rem;
+  margin-right: 0.5rem;
+  position:absolute;
+  top:0;
+  right:0;
+  background-color: #0c0044;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 1rem;
+  width: 12rem;
+  padding: 15px;
+}
+#schedule_date_date:hover{
+  background-color: white;
+  color: #0c0044;
+} 
+
+video{
+  /* position: relative; */
+  width: 100%;
+  /* height: 90%; */
+  /* filter: blur(1.5rem); */
+}
+
+@media screen and (max-width: 1200px) {
+  video{
+    width: auto;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  video{
+    width: auto;
+    height: 80%;
+  }
+}
+
+.salespop_content{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #0c0044;
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media screen and (max-width: 600px) {
+  .salespop_content{
+    font-size: medium;
+  }
+}
+
+.service_container{
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.call_space{
+  text-decoration: none;
+  outline: none;
+  border-radius: 2rem;
+  width: 60%;
+  padding: 1rem;
+  border: none;
+  background-color: #0c0044;
+  color: white;
+  font-size: larger;
+  display: inline-block;
+  background: #1f00a7;;
+  transition: all 400ms linear 0s;
+  /* margin: 40px; */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .call_space{
+    font-size: medium;
+  }
+}
+
+.stagnant_schedule_call {
+  background-color: #1f00a7;;
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  outline: none;
+  padding: 10rem;
+  border: "none";
+  bottom: 0;
+  right:0;
+  width: 12rem;
+  padding: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.stagnant_schedule_call:hover {
+  background-color: white;
+  color: #0c0044;
+  border: 2px solid #1f00a7;;
+}
+
+.call_space:hover{
+  background-color: white;
+  color: #0c0044;
+}
+.fa::before, .fa::after{
+  font-family: "Font Awesome 5 free";
+  content: "\f368";
+  font-weight: 900;
+}
+
+.footer-area{
+  background-color:#0c0044;
+  
+}
+
+.footer-top{
+  background-color: #292929;
+}
+
+.footer-bottom{
+  background-color: rgb(22, 22, 22);
+  color: rgb(145, 145, 145);
+  padding: 2rem;
+  transition: all 400ms linear 0s;
+}
+
+
+#foot_links{
+  text-decoration: none;
+  color: rgb(165, 165, 165);
+  transition: all 400ms linear 0s;
+  width: 8rem;
+}
+
+#foot_links:hover{
+  color: white;
+}
+
+.link_call_div{
+  padding-bottom: 0.5rem;
+  padding-left: 35rem;
+  transition: all 400ms linear 0s;
+}
+
+.call_number2 a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.call_number1 a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.call_number1 {
+  text-decoration: none;
+  outline: none;
+  border-radius: 2rem;
+  width: 60%;
+  padding: 1rem;
+  border: none;
+  color: white;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding-bottom: 0.5rem;
+}
+
+.callLink{
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  transition: all 400ms linear 0s;
+}
+
+.footer_schedule{
+  padding: 3rem;
+  position: center;
+}
+
+.top_call_spaces{
+  margin: 1rem;
+  position:absolute;
+  top:0;
+  right:0;
+  background-color: #1f00a7;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 1rem;
+  width: 13.5rem;
+  padding: 10px;
+  transition: all 400ms linear 0s;
+  
+}
+
+.top_call_spaces:hover{
+  background-color: white;
+  color: #0c0044;
+}
+
+#info_link{
+  color: rgb(145, 145, 145);
+}
+
+#info_link:hover{
+  color: rgb(145, 145, 145);
+  color: #0c0044;
+}
+
+
+.App-link {
+  color: #0c0044;
+  ;
+}
+
+.num {
+  padding: 0.1rem 0.5rem; 
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+/* .num:before {
+  content: '-';
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #0c0044;
+  opacity: 0.05;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+} */
+
+.num p {
+  position: relative;
+  color: "black";
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.num:hover {
+  background-color: rgba(109, 109, 109, 0.116);
+}
+.num:hover:before {
+  opacity: 0.8;
+}
+.num:hover p {
+  /* left: 1rem; */
+  padding: 0.1rem;
+}
+
+.row_l{
+  align-content: center;
+}
+
+/* Clear floats after the columns */
+.row_l:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column_l {
+  float: left;
+  width: 45%;
+  padding: 2rem;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .column_l {
+    width: 95%;
+  }
+}
+
+.row_r{
+  align-content: center;
+}
+
+/* Clear floats after the columns */
+.row_r:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column_r {
+  float: right;
+  width: 45%;
+  padding: 2rem;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .column_r {
+    width: 95%;
+  }
+}
+
+#oldway_list li{
+  list-style: none;
+  padding:0.5rem;
+  /* background-color: #ecf4f7; */
+  margin-bottom: 0.3rem;
+  align-items: center;
+}
+
+
+.head_step_process{
+  align-content: center;
+}
+
+/* Clear floats after the columns */
+.head_step_process:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.step_process {
+  background-color: #ffffff;
+  float: left;
+  width: 23%;
+  padding: 0.5rem;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .step_process {
+    width: 100%;
+  }
+}
+
+#image_process{
+  height: 20%;
+  width: 80%;
+  background-color: white;
+}
+
+#text_process{
+  background-color: #ffffff;
+  padding: 1rem;
+  height: 15rem;
+}
+
+#header_scroll {
+  background-color: white;
+  position: fixed;
+  top: -15rem;
+  width: 100%;
+  display: block;
+  transition: top 3.5s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#roi_calculator{
+  width: 100%;
+  background-color: #292929;
+  color: white;
+  padding: 3rem;
+  
+}
+
+#roi_calculator input{
+  margin: 0.5rem;
+  background-color: rgba(226, 235, 248, 0.712);
+  color: black;
+  outline: none;
+  border: 2px solid rgb(121, 121, 121);
+  border-radius: 1rem;
+  width: 10rem;
+  padding: 10px;
+  font-size: large;
+}
+
+#roi_calculator button{
+  text-decoration: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: none;
+  color: white;
+  background: #0c0044;;
+  transition: all 400ms linear 0s;
+  text-align: center;
+  border: 2px solid #0c0044;;
+}
+
+#roi_calculator button:hover{
+  background-color: white;
+  color: #0c0044;;
+  border: 2px solid #0c0044;;
+}
+
+#roi_calculator::placeholder {
+  color: black;
+}
+
+#dollar_image{
+  position: absolute;
+    display: block;
+    z-index:-1;
+    padding-left: 10rem;
+    opacity: 0.15;
 }
