@@ -92,6 +92,18 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  #header1{
+    font-size: 300%;
+  }
+  #header2{
+    font-size:150%;
+  }
+  #header3{
+    font-size: 100%;
+    padding-bottom: 8rem;
+  }
+}
 
 
 #schedule_date{
