@@ -13,7 +13,7 @@
   /* background-color: rgba(172, 51, 51, 0.87); */
   height: 100%;
   width: 90%;
-  padding-bottom: 7.5rem;
+  padding-bottom: 4%;
 }
 
 #body_sales{
@@ -54,14 +54,17 @@
 #header1{
   font-size: 350%;
   color: #ffffff;
+  text-shadow: 2px 2px #000000;
 }
 #header2{
   font-size: 200%;
   color: #ffffff;
+  text-shadow: 1px 1px #000000;
 }
 #header3{
   font-size: 150%;
   color: #ffffff;
+  text-shadow: 2px 2px #000000;
 }
 
 @media screen and (max-width: 1200px) {
@@ -73,6 +76,7 @@
   }
   #header3{
     font-size: 100%;
+    padding-bottom: 5.5rem;
   }
 }
 
@@ -247,8 +251,9 @@ video{
   border: "none";
   bottom: 0;
   right:0;
-  width: 12rem;
-  padding: 15px;
+  width: 15rem;
+  font-size: 86%;
+  padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 2rem;
@@ -353,7 +358,8 @@ video{
   border: 2px solid white;
   border-radius: 1rem;
   width: 13.5rem;
-  padding: 10px;
+  font-size: 70%;
+  padding: 1rem;
   transition: all 400ms linear 0s;
   
 }

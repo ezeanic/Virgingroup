@@ -121,13 +121,13 @@ class App extends React.Component{
                   </video> */}
                   <img id="vid-background" src={Vid}/>
                   <h1 id="header1"><strong>Virgin group </strong></h1>
-                  <h6 id="header3"><strong>Petroleum and Petrochemical LTD </strong></h6>
+                  <h6 id="header2"><strong>Petroleum and Petrochemical LTD </strong></h6>
                   <div>
                     <button onClick={this.Removeoverlay} id="call_space" class="call_space" >SET AN APPOINTMENT TODAY </button>
                 </div>
                   <div class="call_number1">
-                      <a href="tel:3174555667"> or call us at 
-                        <strong class="strongTagButBlack"> (317) 455-5667</strong>
+                      <a href="tel:6162279844"> or call us at 
+                        <strong class="strongTagButBlack"> (616) 227-9844</strong>
                       </a>
                   </div>
                 </div>
@@ -207,8 +207,8 @@ class App extends React.Component{
                   <div style={{textAlign: "center"}}>
                     <a onClick={this.Removeoverlay} href="#top_call_space" id="call_space" class="call_space" >SET AN APPOINTMENT TODAY </a>      
                     <div class="call_number2">
-                        <a href="tel:3174555667"> or call us at 
-                          <strong class="strongTagButBlack"> (317) 455-5667</strong>
+                        <a href="tel:6162279844"> or call us at 
+                          <strong class="strongTagButBlack"> (616) 227-9844</strong>
                         </a>
                     </div>
                 </div>
@@ -222,14 +222,15 @@ class App extends React.Component{
                             <a style={{ display: "flex"}} id="foot_links" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/bestooh-ezeani-a09866146/">&nbsp;LinkedIn</a><br/>
                             <span id="foot_links"  id="location_salespop"></span><br/>
                             <h4 style={{color:"white"}}>CONTACT INFO</h4>
-                            <a style={{ display: "flex"}} id="foot_links" href="tel:3174555667">&nbsp;(616) 227-9844</a><br/>
+                            <a style={{ display: "flex"}} id="foot_links" href="tel:6162279844">&nbsp;(616) 227-9844</a><br/>
                             <a style={{ display: "flex", width: "15rem"}} id="foot_links" href="mailto:virgingroup@hotmail.com">&nbsp;Virgingroup@hotmail.com</a><br/>
                             <span style={{ display: "flex", width: "25rem"}} id="foot_links">&nbsp;No 1 Kofo Abayomi Avenue, Apapa, Lagos, Nigeria.</span><br/><br/>
                       </div>
                     </div>
                   </div>
                   <div class="footer-bottom">
-                    Copyright © 2020 Virgin group - all rights reserved. | <a id="info_link" href="index.html">VIRGINGROUP@HOTMAIL.COM</a>
+                    <p>Copyright © 2020 Virgin group - all rights reserved. | </p>&nbsp;
+                    <p><a id="info_link" href="index.html">VIRGINGROUP@HOTMAIL.COM</a></p>
                   </div>
                 </footer>
             </div>
