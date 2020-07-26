@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Chijioke Ezeani",
-  "license": "MIT",
+  "license": "Me",
   "devDependencies": {
     "nodemon": "^1.14.6"
   },
