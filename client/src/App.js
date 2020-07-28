@@ -19,27 +19,27 @@ import logo from "./images/logo.jpg";
 import vgtech from "./vgtech"
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
+// class App extends React.Component{
+//   constructor() {
+//     super();
+//   };
+
+//   render(){
+//     return(
+//     <div>
+//       <Router>
+//         <Switch>
+//           <Route path = '/' exact component = {Home}/>
+//           <Route path = '/vgtech' component = {vgtech}/>
+//         </Switch>
+//       </Router>
+//     </div>
+//     )
+//   }
+// }
+
+
 class App extends React.Component{
-  constructor() {
-    super();
-  };
-
-  render(){
-    return(
-    <div>
-      <Router>
-        <Switch>
-          <Route path = '/' exact component = {Home}/>
-          <Route path = '/vgtech' component = {vgtech}/>
-        </Switch>
-      </Router>
-    </div>
-    )
-  }
-}
-
-
-class Home extends React.Component{
   constructor() {
     super();
 
