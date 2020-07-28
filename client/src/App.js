@@ -16,10 +16,30 @@ import meetingicon from "./images/meetingicon.jpg";
 import dollarsign from "./images/dollarsign.jpg";
 import nosaveresources from "./images/nosaveresources.jpg";
 import logo from "./images/logo.jpg";
-
-
+import vgtech from "./vgtech"
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 class App extends React.Component{
+  constructor() {
+    super();
+  };
+
+  render(){
+    return(
+    <div>
+      <Router>
+        <Switch>
+          <Route path = '/' exact component = {Home}/>
+          <Route path = '/vgtech' component = {vgtech}/>
+        </Switch>
+      </Router>
+    </div>
+    )
+  }
+}
+
+
+class Home extends React.Component{
   constructor() {
     super();
 
@@ -94,6 +114,9 @@ class App extends React.Component{
 
     let link = `http://localhost:5000/info/${this.state.name}/${this.state.email}/${this.state.date}`;
     
+    
+
+
     return(
       <div>
         <div>

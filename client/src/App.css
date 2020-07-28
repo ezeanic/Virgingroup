@@ -75,21 +75,24 @@
     font-size:150%;
   }
   #header3{
-    font-size: 100%;
+    font-size: 100%;;;
     padding-bottom: 5.5rem;
+    margin-bottom: 10rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   #header1{
     font-size: 200%;
+    color: #000000;
   }
   #header2{
     font-size: 100%;
   }
   #header3{
     font-size: 80%;
-    padding-bottom: 8rem;
+    padding-bottom: 50rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -102,7 +105,8 @@
   }
   #header3{
     font-size: 100%;
-    padding-bottom: 10rem;
+    padding-bottom: 50rem;
+    margin-bottom: 10rem;
   }
 }
 
